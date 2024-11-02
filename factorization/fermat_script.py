@@ -5,7 +5,7 @@ import argparse
 
 def get_args():
     parser = argparse.ArgumentParser("Fermat factorization")
-    parser.add_argument("-n", type=int, help="number to factorize")
+    parser.add_argument("-n", type=int, help="number to factorize",required=True)
     return parser.parse_args()
 
 def fermat(n):
