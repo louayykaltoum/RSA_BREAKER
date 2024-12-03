@@ -1,3 +1,5 @@
 
 .gitattributes
 .git
+.vscode/c_cpp_properties.json
+/.vscode

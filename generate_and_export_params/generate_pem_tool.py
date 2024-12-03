@@ -6,7 +6,7 @@ import argparse
 def parse():
     parser = argparse.ArgumentParser(description="Generate RSA keys with specified parameters.")
     parser.add_argument("--random", action='store_const', const=1, default=0, help="generate random primes for p and q")
-    parser.add_argument("type", type=str,default="all" ,help="type of the key u wanna generate (private/public/all)")
+    parser.add_argument("--type", type=str,default="all" ,help="type of the key u wanna generate (private/public/all)")
     parser.add_argument("-n", type=int, help="the modulus of the key (only needed for public key)")
     parser.add_argument("-p", type=int, help="First prime number (p) (only needed for private key)")
     parser.add_argument("-q", type=int, help="Second prime number (q) (only needed for private key)")
